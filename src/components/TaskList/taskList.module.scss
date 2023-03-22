@@ -1,0 +1,47 @@
+.wrapper {
+  margin-top: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.task-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+
+  .check-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .task-name {
+    &.done {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+  }
+}
+
+.action-btn {
+  padding: 2px 6px;
+  border: 1px solid #333;
+  border-radius: 4px;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.action-btn + .action-btn {
+  margin-left: 3px;
+}
